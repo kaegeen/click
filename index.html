@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Counter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-sm p-6 border rounded shadow text-center">
+    <h1 class="text-2xl font-semibold mb-4">Click Counter</h1>
+    <div id="counter" class="text-3xl mb-4">0</div>
+    <button onclick="increment()" class="border px-4 py-2">Click Me</button>
+  </div>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById('counter').textContent = count;
+    }
+  </script>
+</body>
+</html>
